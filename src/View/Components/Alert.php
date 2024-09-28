@@ -10,6 +10,7 @@ use Illuminate\View\Component;
 class Alert extends Component
 {
     public string $uuid;
+
     /**
      * Create a new component instance.
      */
@@ -22,11 +23,10 @@ class Alert extends Component
         public ?bool $outline = false,
         public ?string $color = 'info',
         public ?string $icon = null,
-    )
-    {
+    ) {
         $type = $this->outline ? 'soft' : 'solid';
-        $this->color = config('laraline.alerts.colors.' . $type . '.' . $this->color);
-        $this->uuid = 'laraline-alert-' . Str::uuid();
+        $this->color = config('laraline.alerts.colors.'.$type.'.'.$this->color);
+        $this->uuid = 'laraline-alert-'.Str::uuid();
     }
 
     /**

@@ -26,9 +26,8 @@ class AccordionItem extends Component
         // Slots
         public mixed $header = null,
         public mixed $content = null,
-    )
-    {
-        $this->uuid = 'laraline-collapse-' . Str::uuid();
+    ) {
+        $this->uuid = 'laraline-collapse-'.Str::uuid();
     }
 
     /**

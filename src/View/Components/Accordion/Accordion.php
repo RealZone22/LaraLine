@@ -13,8 +13,7 @@ class Accordion extends Component
      */
     public function __construct(
         public ?bool $keepOpen = false,
-    )
-    {}
+    ) {}
 
     /**
      * Get the view / contents that represent the component.
