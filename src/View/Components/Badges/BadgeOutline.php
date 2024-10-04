@@ -16,9 +16,8 @@ class BadgeOutline extends Component
      */
     public function __construct(
         public string $color = 'info',
-    )
-    {
-        $this->uuid = 'laraline-badge-outline-' . Str::uuid();
+    ) {
+        $this->uuid = 'laraline-badge-outline-'.Str::uuid();
     }
 
     /**

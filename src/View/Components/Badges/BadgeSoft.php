@@ -16,9 +16,8 @@ class BadgeSoft extends Component
      */
     public function __construct(
         public string $color = 'info',
-    )
-    {
-        $this->uuid = 'laraline-badge-soft-' . Str::uuid();
+    ) {
+        $this->uuid = 'laraline-badge-soft-'.Str::uuid();
     }
 
     /**

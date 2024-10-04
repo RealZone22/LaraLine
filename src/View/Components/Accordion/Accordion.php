@@ -17,9 +17,8 @@ class Accordion extends Component
     public function __construct(
         public ?bool $isAccordion = true,
         public ?bool $alwaysOpen = false,
-    )
-    {
-        $this->uuid = 'laraline-accordion-' . Str::uuid();
+    ) {
+        $this->uuid = 'laraline-accordion-'.Str::uuid();
     }
 
     /**
