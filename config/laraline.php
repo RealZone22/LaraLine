@@ -88,7 +88,7 @@ return [
                 'warning' => 'border border-yellow-500 text-yellow-500',
                 'light' => 'border border-white text-white',
             ],
-        ]
+        ],
     ],
 
     'components' => [

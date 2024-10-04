@@ -3,9 +3,9 @@
 namespace RealZone22\LaraLine;
 
 use Illuminate\Support\Facades\Blade;
+use RealZone22\LaraLine\Commands\LaraLineCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use RealZone22\LaraLine\Commands\LaraLineCommand;
 
 class LaraLineServiceProvider extends PackageServiceProvider
 {
@@ -28,8 +28,8 @@ class LaraLineServiceProvider extends PackageServiceProvider
     public function registerComponents()
     {
         $this->publishes([
-            __DIR__ . '/../resources/views/components' => resource_path('views/vendor/laraline/components'),
-            __DIR__ . '/../src/View/Components' => app_path('View/Components'),
+            __DIR__.'/../resources/views/components' => resource_path('views/vendor/laraline/components'),
+            __DIR__.'/../src/View/Components' => app_path('View/Components'),
         ], 'laraline-components');
 
         $prefix = config('laraline.prefix');
@@ -39,10 +39,10 @@ class LaraLineServiceProvider extends PackageServiceProvider
             return;
         }
         foreach ($components as $name => $class) {
-            Blade::component($class, $prefix . $name);
+            Blade::component($class, $prefix.$name);
 
             // Register the component with the laraline prefix
-            Blade::component($class, 'laraline-' . $name);
+            Blade::component($class, 'laraline-'.$name);
         }
     }
 }

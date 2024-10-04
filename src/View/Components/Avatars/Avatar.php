@@ -10,24 +10,26 @@ use Illuminate\View\Component;
 class Avatar extends Component
 {
     public $uuid;
+
     public $statusPosition;
+
     public $statusSize;
+
     public $initialSize;
 
     /**
      * Create a new component instance.
      */
     public function __construct(
-        public ?string  $color = null,
+        public ?string $color = null,
 
         public ?string $src = null,
         public ?string $alt = null,
         public ?string $initials = null,
 
-        public string  $size = 'md',
-        public string  $position = 'top-right',
-    )
-    {
+        public string $size = 'md',
+        public string $position = 'top-right',
+    ) {
         switch ($this->position) {
             case 'top-left':
                 $this->statusPosition = 'left-0 top-0';
@@ -71,7 +73,7 @@ class Avatar extends Component
                 break;
         }
 
-        $this->uuid = 'laraline-avatar-' . Str::uuid();
+        $this->uuid = 'laraline-avatar-'.Str::uuid();
     }
 
     /**

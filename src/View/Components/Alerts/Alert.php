@@ -22,9 +22,8 @@ class Alert extends Component
         public mixed $header = null,
         public mixed $content = null,
         public mixed $actions = null,
-    )
-    {
-        $this->uuid = 'laraline-alert-' . Str::uuid();
+    ) {
+        $this->uuid = 'laraline-alert-'.Str::uuid();
     }
 
     /**

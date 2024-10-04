@@ -27,9 +27,8 @@ class Collapsable extends Component
 
         public string $header = '',
         public string $content = '',
-    )
-    {
-        $this->uuid = 'laraline-collapsable-' . Str::uuid();
+    ) {
+        $this->uuid = 'laraline-collapsable-'.Str::uuid();
     }
 
     /**
