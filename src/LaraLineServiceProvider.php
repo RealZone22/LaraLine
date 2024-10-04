@@ -35,8 +35,14 @@ class LaraLineServiceProvider extends PackageServiceProvider
         $prefix = config('laraline.prefix');
         $components = config('laraline.components');
 
+        if (empty($components)) {
+            return;
+        }
         foreach ($components as $name => $class) {
             Blade::component($class, $prefix.$name);
+
+            // Register the component with the laraline prefix
+            Blade::component($class, 'laraline-'.$name);
         }
     }
 }

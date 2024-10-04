@@ -8,10 +8,8 @@
 ## Base Components
 - [x] Accordion
 - [x] Alert
-- [ ] Avatar
-- [ ] Avatar Group
-- [ ] Badge
-- [ ] Blockquote
+- [x] Avatar
+- [x] Badge
 - [ ] Buttons
 - [ ] Button Group
 - [ ] Card

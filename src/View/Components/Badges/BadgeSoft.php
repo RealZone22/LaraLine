@@ -1,13 +1,13 @@
 <?php
 
-namespace RealZone22\LaraLine\View\Components\Accordion;
+namespace RealZone22\LaraLine\View\Components\Badges;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Str;
 use Illuminate\View\Component;
 
-class Accordion extends Component
+class BadgeSoft extends Component
 {
     public $uuid;
 
@@ -15,10 +15,9 @@ class Accordion extends Component
      * Create a new component instance.
      */
     public function __construct(
-        public ?bool $isAccordion = true,
-        public ?bool $alwaysOpen = false,
+        public string $color = 'info',
     ) {
-        $this->uuid = 'laraline-accordion-'.Str::uuid();
+        $this->uuid = 'laraline-badge-soft-'.Str::uuid();
     }
 
     /**
@@ -26,6 +25,6 @@ class Accordion extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('laraline::components.accordion.accordion');
+        return view('laraline::components.badges.badge-soft');
     }
 }
