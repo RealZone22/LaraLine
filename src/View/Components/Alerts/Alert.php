@@ -18,6 +18,7 @@ class Alert extends Component
         public string $color = 'info',
         public bool $dismissible = false,
         public ?string $icon = null,
+        public string $type = 'solid',
 
         public mixed $header = null,
         public mixed $content = null,

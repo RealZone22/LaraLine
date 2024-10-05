@@ -16,6 +16,7 @@ class Badge extends Component
      */
     public function __construct(
         public string $color = 'info',
+        public string $type = 'solid',
     ) {
         $this->uuid = 'laraline-badge-'.Str::uuid();
     }

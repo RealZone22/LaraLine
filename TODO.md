@@ -10,7 +10,7 @@
 - [x] Alert
 - [x] Avatar
 - [x] Badge
-- [ ] Buttons
+- [x] Buttons
 - [ ] Button Group
 - [ ] Card
 - [ ] Chat Bubbles
