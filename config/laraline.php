@@ -158,5 +158,8 @@ return [
         'card' => \RealZone22\LaraLine\View\Components\Cards\Card::class,
 
         'chat' => \RealZone22\LaraLine\View\Components\Chat\Chat::class,
+
+        'carousel' => \RealZone22\LaraLine\View\Components\Carousel\Carousel::class,
+        'carousel-item' => \RealZone22\LaraLine\View\Components\Carousel\CarouselItem::class,
     ],
 ];

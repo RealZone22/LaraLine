@@ -13,8 +13,8 @@
 - [x] Buttons
 - [x] Card
 - [x] Chat Bubbles
-- [ ] Carousel
-- [ ] Collapse
+- [x] Carousel
+- [x] Collapse
 - [ ] Datepicker
 - [ ] Devices
 - [ ] List
