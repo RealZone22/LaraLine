@@ -11,9 +11,8 @@
 - [x] Avatar
 - [x] Badge
 - [x] Buttons
-- [ ] Button Group
-- [ ] Card
-- [ ] Chat Bubbles
+- [x] Card
+- [x] Chat Bubbles
 - [ ] Carousel
 - [ ] Collapse
 - [ ] Datepicker

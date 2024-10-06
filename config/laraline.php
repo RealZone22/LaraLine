@@ -154,5 +154,9 @@ return [
         'badge' => RealZone22\LaraLine\View\Components\Badges\Badge::class,
 
         'button' => \RealZone22\LaraLine\View\Components\Buttons\Button::class,
+
+        'card' => \RealZone22\LaraLine\View\Components\Cards\Card::class,
+
+        'chat' => \RealZone22\LaraLine\View\Components\Chat\Chat::class,
     ],
 ];
