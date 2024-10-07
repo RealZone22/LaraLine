@@ -1,13 +1,13 @@
 <?php
 
-namespace RealZone22\LaraLine\View\Components\Badges;
+namespace RealZone22\LaraLine\View\Components\Cards;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Str;
 use Illuminate\View\Component;
 
-class BadgeOutline extends Component
+class Card extends Component
 {
     public $uuid;
 
@@ -15,9 +15,12 @@ class BadgeOutline extends Component
      * Create a new component instance.
      */
     public function __construct(
-        public string $color = 'info',
+        public mixed $title = null,
+        public mixed $subtitle = null,
+        public mixed $header = null,
+        public mixed $footer = null,
     ) {
-        $this->uuid = 'laraline-badge-outline-'.Str::uuid();
+        $this->uuid = 'laraline-card-'.Str::uuid();
     }
 
     /**
@@ -25,6 +28,6 @@ class BadgeOutline extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('laraline::components.badges.badge-outline');
+        return view('laraline::components.cards.card');
     }
 }

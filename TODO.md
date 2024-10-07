@@ -10,12 +10,11 @@
 - [x] Alert
 - [x] Avatar
 - [x] Badge
-- [ ] Buttons
-- [ ] Button Group
-- [ ] Card
-- [ ] Chat Bubbles
-- [ ] Carousel
-- [ ] Collapse
+- [x] Buttons
+- [x] Card
+- [x] Chat Bubbles
+- [x] Carousel
+- [x] Collapse
 - [ ] Datepicker
 - [ ] Devices
 - [ ] List

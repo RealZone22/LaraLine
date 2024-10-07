@@ -1,13 +1,13 @@
 <?php
 
-namespace RealZone22\LaraLine\View\Components\Badges;
+namespace RealZone22\LaraLine\View\Components\Carousel;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Str;
 use Illuminate\View\Component;
 
-class BadgeSoft extends Component
+class CarouselItem extends Component
 {
     public $uuid;
 
@@ -15,9 +15,11 @@ class BadgeSoft extends Component
      * Create a new component instance.
      */
     public function __construct(
-        public string $color = 'info',
+        public mixed $avatar = null,
+        public mixed $footer = null,
+        public bool $right = false,
     ) {
-        $this->uuid = 'laraline-badge-soft-'.Str::uuid();
+        $this->uuid = 'laraline-carousel-item-'.Str::uuid();
     }
 
     /**
@@ -25,6 +27,6 @@ class BadgeSoft extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('laraline::components.badges.badge-soft');
+        return view('laraline::components.carousel.carousel-item');
     }
 }

@@ -1,13 +1,13 @@
 <?php
 
-namespace RealZone22\LaraLine\View\Components\Badges;
+namespace RealZone22\LaraLine\View\Components\Chat;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Str;
 use Illuminate\View\Component;
 
-class Badge extends Component
+class Chat extends Component
 {
     public $uuid;
 
@@ -15,10 +15,11 @@ class Badge extends Component
      * Create a new component instance.
      */
     public function __construct(
-        public string $color = 'info',
-        public string $type = 'solid',
+        public mixed $avatar = null,
+        public mixed $footer = null,
+        public bool $right = false,
     ) {
-        $this->uuid = 'laraline-badge-'.Str::uuid();
+        $this->uuid = 'laraline-chat-'.Str::uuid();
     }
 
     /**
@@ -26,6 +27,6 @@ class Badge extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('laraline::components.badges.badge');
+        return view('laraline::components.chat.chat');
     }
 }
