@@ -18,7 +18,7 @@
 - [x] Datepicker
 - [x] Devices
 - [x] Legend Indicator
-- [ ] Progress
+- [x] Progress
 - [ ] File Upload Progress
 - [ ] Ratings
 - [ ] Skeleton

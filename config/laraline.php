@@ -153,6 +153,26 @@ return [
             'pink' => 'bg-pink-500',
             'light' => 'bg-white',
         ],
+        'progress' => [
+            'progress' => [
+                'dark' => 'bg-gray-800 dark:bg-white',
+                'gray' => 'bg-gray-500',
+                'green' => 'bg-teal-500',
+                'red' => 'bg-red-500',
+                'yellow' => 'bg-yellow-500',
+                'blue' => 'bg-blue-600 dark:bg-blue-500',
+                'light' => 'bg-white',
+            ],
+            'circle_gauge' => [
+                'dark' => 'text-gray-800 dark:text-white',
+                'gray' => 'text-gray-500',
+                'green' => 'text-teal-500',
+                'red' => 'text-red-500',
+                'yellow' => 'text-yellow-500',
+                'blue' => 'text-blue-600 dark:text-blue-500',
+                'light' => 'text-white',
+            ],
+        ]
     ],
 
     'components' => [
@@ -185,5 +205,7 @@ return [
         'divider' => \RealZone22\LaraLine\View\Components\Divider\Divider::class,
 
         'link' => \RealZone22\LaraLine\View\Components\Links\Link::class,
+
+        'progress' => \RealZone22\LaraLine\View\Components\Progress\Progress::class,
     ],
 ];
