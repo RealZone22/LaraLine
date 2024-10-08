@@ -163,5 +163,7 @@ return [
         'carousel-item' => \RealZone22\LaraLine\View\Components\Carousel\CarouselItem::class,
 
         'datepicker' => \RealZone22\LaraLine\View\Components\DatePicker\DatePicker::class,
+
+        'device' => \RealZone22\LaraLine\View\Components\Devices\Device::class,
     ],
 ];

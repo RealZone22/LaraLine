@@ -16,7 +16,7 @@
 - [x] Carousel
 - [x] Collapse
 - [x] Datepicker
-- [ ] Devices
+- [x] Devices
 - [ ] List
 - [ ] List Group
 - [ ] Legend Indicator
