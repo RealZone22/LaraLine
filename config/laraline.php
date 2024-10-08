@@ -183,5 +183,7 @@ return [
         'kbd' => \RealZone22\LaraLine\View\Components\KBD\KBD::class,
 
         'divider' => \RealZone22\LaraLine\View\Components\Divider\Divider::class,
+
+        'link' => \RealZone22\LaraLine\View\Components\Links\Link::class,
     ],
 ];
