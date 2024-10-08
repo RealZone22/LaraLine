@@ -19,8 +19,7 @@
 - [x] Devices
 - [x] Legend Indicator
 - [x] Progress
-- [ ] File Upload Progress
-- [ ] Ratings
+- [x] Ratings
 - [ ] Skeleton
 - [ ] Spinners
 - [ ] Styled Icons

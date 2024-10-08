@@ -6,7 +6,7 @@
                 <span class="text-sm text-gray-800 dark:text-white">{{ $value }}%</span>
             </div>
         @endif
-        <div
+        <div wire:key="{{ $uuid }}"
             {{ $attributes->class(['flex w-full bg-gray-200 rounded-full overflow-hidden dark:bg-neutral-700', 'h-4' => $inline, 'h-1.5' => ! $inline]) }}
             role="progressbar" aria-valuenow="{{ $value }}" aria-valuemin="{{ $min }}" aria-valuemax="{{ $max }}">
             <div
@@ -18,7 +18,7 @@
             </div>
         </div>
     @elseif($type == 'circle')
-        <div class="relative size-40">
+        <div class="relative size-40" wire:key="{{ $uuid }}">
             <svg class="size-full -rotate-90" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 dark:text-neutral-700"
                         stroke-width="2"></circle>
@@ -35,7 +35,7 @@
             </div>
         </div>
     @elseif($type == 'gauge')
-        <div class="relative size-40">
+        <div class="relative size-40" wire:key="{{ $uuid }}">
             <svg class="rotate-[135deg] size-full" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 dark:text-neutral-700"
                         stroke-width="1.5" stroke-dasharray="75 {{ $max }}" stroke-linecap="round"></circle>

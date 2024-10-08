@@ -207,5 +207,7 @@ return [
         'link' => \RealZone22\LaraLine\View\Components\Links\Link::class,
 
         'progress' => \RealZone22\LaraLine\View\Components\Progress\Progress::class,
+
+        'rating' => \RealZone22\LaraLine\View\Components\Rating\Rating::class,
     ],
 ];
