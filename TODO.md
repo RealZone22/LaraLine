@@ -2,7 +2,7 @@
 
 ## Content
 - [ ] Links
-- [ ] Dividers
+- [x] Dividers
 - [x] KBD
 
 ## Base Components

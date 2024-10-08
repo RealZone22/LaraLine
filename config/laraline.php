@@ -181,5 +181,7 @@ return [
         'legend' => \RealZone22\LaraLine\View\Components\Legend\Legend::class,
 
         'kbd' => \RealZone22\LaraLine\View\Components\KBD\KBD::class,
+
+        'divider' => \RealZone22\LaraLine\View\Components\Divider\Divider::class,
     ],
 ];
