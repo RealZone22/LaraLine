@@ -17,9 +17,7 @@
 - [x] Collapse
 - [x] Datepicker
 - [x] Devices
-- [ ] List
-- [ ] List Group
-- [ ] Legend Indicator
+- [x] Legend Indicator
 - [ ] Progress
 - [ ] File Upload Progress
 - [ ] Ratings
