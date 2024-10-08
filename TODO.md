@@ -1,11 +1,11 @@
 # Todo
 
-## Content
+## Content (3/3)
 - [x] Links
 - [x] Dividers
 - [x] KBD
 
-## Base Components
+## Base Components (14/20)
 - [x] Accordion
 - [x] Alert
 - [x] Avatar
@@ -27,7 +27,7 @@
 - [ ] Timeline
 - [ ] Treeview
 
-## Navigation
+## Navigation (0/9)
 - [ ] Navbar
 - [ ] Mega Menu
 - [ ] Navs
@@ -38,7 +38,7 @@
 - [ ] Pagination
 - [ ] Stepper
 
-## Basic Forms
+## Basic Forms (0/10)
 - [ ] Input
 - [ ] Input Group
 - [ ] Textarea
@@ -50,7 +50,7 @@
 - [ ] Range Slider
 - [ ] Color Picker
 
-## Advanced Forms
+## Advanced Forms (0/9)
 - [ ] Advanced Select
 - [ ] Combo Box
 - [ ] Search Box
@@ -61,17 +61,17 @@
 - [ ] Copy Markup
 - [ ] PIN Input
 
-## Overlays
+## Overlays (0/5)
 - [ ] Dropdown
 - [ ] Modal
 - [ ] Offcanvas
 - [ ] Popover
 - [ ] Tooltip
 
-## Tables
+## Tables (0/1)
 - [ ] Table
 
-## Third-Party Plugins
+## Third-Party Plugins (0/7)
 - [ ] Charts
 - [ ] Clipboard
 - [ ] Datamaps
