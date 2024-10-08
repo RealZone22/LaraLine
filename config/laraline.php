@@ -151,7 +151,7 @@ return [
 
         'avatar' => \RealZone22\LaraLine\View\Components\Avatars\Avatar::class,
 
-        'badge' => RealZone22\LaraLine\View\Components\Badges\Badge::class,
+        'badge' => \RealZone22\LaraLine\View\Components\Badges\Badge::class,
 
         'button' => \RealZone22\LaraLine\View\Components\Buttons\Button::class,
 
@@ -161,5 +161,7 @@ return [
 
         'carousel' => \RealZone22\LaraLine\View\Components\Carousel\Carousel::class,
         'carousel-item' => \RealZone22\LaraLine\View\Components\Carousel\CarouselItem::class,
+
+        'datepicker' => \RealZone22\LaraLine\View\Components\DatePicker\DatePicker::class,
     ],
 ];

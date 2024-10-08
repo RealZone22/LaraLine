@@ -15,7 +15,7 @@
 - [x] Chat Bubbles
 - [x] Carousel
 - [x] Collapse
-- [ ] Datepicker
+- [x] Datepicker
 - [ ] Devices
 - [ ] List
 - [ ] List Group

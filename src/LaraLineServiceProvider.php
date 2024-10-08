@@ -19,6 +19,7 @@ class LaraLineServiceProvider extends PackageServiceProvider
         $package
             ->name('laraline')
             ->hasConfigFile()
+            ->hasTranslations()
             ->hasViews('laraline')
             ->hasCommand(LaraLineCommand::class);
 
