@@ -179,5 +179,7 @@ return [
         'device' => \RealZone22\LaraLine\View\Components\Devices\Device::class,
 
         'legend' => \RealZone22\LaraLine\View\Components\Legend\Legend::class,
+
+        'kbd' => \RealZone22\LaraLine\View\Components\KBD\KBD::class,
     ],
 ];

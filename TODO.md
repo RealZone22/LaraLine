@@ -3,7 +3,7 @@
 ## Content
 - [ ] Links
 - [ ] Dividers
-- [ ] KBD
+- [x] KBD
 
 ## Base Components
 - [x] Accordion
