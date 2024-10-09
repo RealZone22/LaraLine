@@ -1,13 +1,13 @@
 <?php
 
-namespace RealZone22\LaraLine\View\Components\Skeleton;
+namespace RealZone22\LaraLine\View\Components\Spinners;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Str;
 use Illuminate\View\Component;
 
-class Skeleton extends Component
+class Spinner extends Component
 {
     public $uuid;
 
@@ -15,10 +15,9 @@ class Skeleton extends Component
      * Create a new component instance.
      */
     public function __construct(
-        public int $amount = 5,
-        public string $icon = 'icon-star',
+        public string $color = 'blue',
     ) {
-        $this->uuid = 'laraline-rating-'.Str::uuid();
+        $this->uuid = 'laraline-spinner-'.Str::uuid();
     }
 
     /**
@@ -26,6 +25,6 @@ class Skeleton extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('laraline::components.skeleton.skeleton');
+        return view('laraline::components.spinners.spinner');
     }
 }

@@ -20,9 +20,7 @@
 - [x] Legend Indicator
 - [x] Progress
 - [x] Ratings
-- [ ] Skeleton
-- [ ] Spinners
-- [ ] Styled Icons
+- [x] Spinners
 - [ ] Toasts
 - [ ] Timeline
 - [ ] Treeview

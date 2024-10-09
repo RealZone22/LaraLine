@@ -3,7 +3,9 @@
 namespace RealZone22\LaraLine;
 
 use Illuminate\Support\Facades\Blade;
+use Livewire\Livewire;
 use RealZone22\LaraLine\Commands\LaraLineCommand;
+use RealZone22\LaraLine\Livewire\Toast;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -45,5 +47,7 @@ class LaraLineServiceProvider extends PackageServiceProvider
             // Register the component with the laraline prefix
             Blade::component($class, 'laraline-'.$name);
         }
+
+        Livewire::component('laraline-toast', Toast::class);
     }
 }

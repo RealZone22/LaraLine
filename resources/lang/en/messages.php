@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'loading' => 'Loading...',
+    'close' => 'Close',
     'weekdays' => [
         'mon' => 'Mon',
         'tue' => 'Tue',

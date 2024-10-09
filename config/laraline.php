@@ -9,6 +9,7 @@ return [
             'position' => 'top-right',
             'z-index' => 'z-50',
             'timeout' => 5000,
+            'variant' => 'soft',
         ],
 
         'modal' => [
@@ -172,7 +173,35 @@ return [
                 'blue' => 'text-blue-600 dark:text-blue-500',
                 'light' => 'text-white',
             ],
-        ]
+        ],
+        'spinners' => [
+            'dark' => 'text-gray-800 dark:text-white',
+            'gray' => 'text-gray-600',
+            'green' => 'text-teal-500',
+            'red' => 'text-red-600',
+            'yellow' => 'text-yellow-600',
+            'blue' => 'text-blue-600 dark:text-blue-500',
+            'purple' => 'text-purple-600',
+            'light' => 'text-white',
+        ],
+        'toasts' => [
+            'solid' => [
+                'dark' => 'bg-gray-800 text-white',
+                'success' => 'bg-teal-500 text-white',
+                'danger' => 'bg-red-500 text-white',
+                'warning' => 'bg-yellow-500 text-white',
+                'info' => 'bg-blue-600 text-white',
+                'light' => 'bg-white text-gray-600',
+            ],
+            'soft' => [
+                'dark' => 'bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white',
+                'success' => 'bg-teal-100 text-teal-800',
+                'danger' => 'bg-red-100 text-red-800',
+                'warning' => 'bg-yellow-100 text-yellow-800',
+                'info' => 'bg-blue-100 text-blue-800',
+                'light' => 'bg-white/10 text-white',
+            ],
+        ],
     ],
 
     'components' => [
@@ -210,6 +239,8 @@ return [
 
         'rating' => \RealZone22\LaraLine\View\Components\Rating\Rating::class,
 
-        'skeleton' => \RealZone22\LaraLine\View\Components\Skeleton\Skeleton::class,
+        'spinner' => \RealZone22\LaraLine\View\Components\Spinners\Spinner::class,
+
+        'timeline' => \RealZone22\LaraLine\View\Components\Timeline\Timeline::class,
     ],
 ];
