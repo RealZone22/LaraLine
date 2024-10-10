@@ -19,11 +19,14 @@
                 @if($loading && !$link)
                     <span wire:loading wire:target="{{ $loadingTarget() }}"
                           class="animate-spin inline-block size-4 border-[3px] border-current border-t-transparent text-white rounded-full"
-                          role="status" aria-label="loading"></span>
+                          role="status" aria-label="loading">
+                            <span class="sr-only">{{ trans('laraline::messages.loading') }}</span>
+                    </span>
                 @endif
 
                 @if($iconPosition === 'left' && $icon)
-                    <i class="{{ $icon }}" @if($loading) wire:loading.class="hidden" wire:target="{{ $loadingTarget() }}" @endif></i>
+                    <i class="{{ $icon }}" @if($loading) wire:loading.class="hidden"
+                       wire:target="{{ $loadingTarget() }}" @endif></i>
                 @endif
 
                 {{ $slot }}

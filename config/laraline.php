@@ -9,6 +9,7 @@ return [
             'position' => 'top-right',
             'z-index' => 'z-50',
             'timeout' => 5000,
+            'variant' => 'soft',
         ],
 
         'modal' => [
@@ -141,17 +142,77 @@ return [
                 'white' => 'text-white hover:text-white/80 focus:outline-none focus:text-white/80',
             ],
         ],
+        'legend' => [
+            'dark' => 'bg-gray-800 dark:bg-white',
+            'gray' => 'bg-gray-600',
+            'red' => 'bg-red-600',
+            'yellow' => 'bg-yellow-500',
+            'green' => 'bg-green-500',
+            'blue' => 'bg-blue-600 dark:bg-blue-500',
+            'indigo' => 'bg-indigo-500',
+            'purple' => 'bg-purple-500',
+            'pink' => 'bg-pink-500',
+            'light' => 'bg-white',
+        ],
+        'progress' => [
+            'progress' => [
+                'dark' => 'bg-gray-800 dark:bg-white',
+                'gray' => 'bg-gray-500',
+                'green' => 'bg-teal-500',
+                'red' => 'bg-red-500',
+                'yellow' => 'bg-yellow-500',
+                'blue' => 'bg-blue-600 dark:bg-blue-500',
+                'light' => 'bg-white',
+            ],
+            'circle_gauge' => [
+                'dark' => 'text-gray-800 dark:text-white',
+                'gray' => 'text-gray-500',
+                'green' => 'text-teal-500',
+                'red' => 'text-red-500',
+                'yellow' => 'text-yellow-500',
+                'blue' => 'text-blue-600 dark:text-blue-500',
+                'light' => 'text-white',
+            ],
+        ],
+        'spinners' => [
+            'dark' => 'text-gray-800 dark:text-white',
+            'gray' => 'text-gray-600',
+            'green' => 'text-teal-500',
+            'red' => 'text-red-600',
+            'yellow' => 'text-yellow-600',
+            'blue' => 'text-blue-600 dark:text-blue-500',
+            'purple' => 'text-purple-600',
+            'light' => 'text-white',
+        ],
+        'toasts' => [
+            'solid' => [
+                'dark' => 'bg-gray-800 text-white',
+                'success' => 'bg-teal-500 text-white',
+                'danger' => 'bg-red-500 text-white',
+                'warning' => 'bg-yellow-500 text-white',
+                'info' => 'bg-blue-600 text-white',
+                'light' => 'bg-white text-gray-600',
+            ],
+            'soft' => [
+                'dark' => 'bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white',
+                'success' => 'bg-teal-100 text-teal-800',
+                'danger' => 'bg-red-100 text-red-800',
+                'warning' => 'bg-yellow-100 text-yellow-800',
+                'info' => 'bg-blue-100 text-blue-800',
+                'light' => 'bg-white/10 text-white',
+            ],
+        ],
     ],
 
     'components' => [
         'accordion' => \RealZone22\LaraLine\View\Components\Accordion\Accordion::class,
-        'collapsable' => \RealZone22\LaraLine\View\Components\Accordion\Collapsable::class,
+        'collapse' => \RealZone22\LaraLine\View\Components\Accordion\Collapsable::class,
 
         'alert' => \RealZone22\LaraLine\View\Components\Alerts\Alert::class,
 
         'avatar' => \RealZone22\LaraLine\View\Components\Avatars\Avatar::class,
 
-        'badge' => RealZone22\LaraLine\View\Components\Badges\Badge::class,
+        'badge' => \RealZone22\LaraLine\View\Components\Badges\Badge::class,
 
         'button' => \RealZone22\LaraLine\View\Components\Buttons\Button::class,
 
@@ -161,5 +222,25 @@ return [
 
         'carousel' => \RealZone22\LaraLine\View\Components\Carousel\Carousel::class,
         'carousel-item' => \RealZone22\LaraLine\View\Components\Carousel\CarouselItem::class,
+
+        'datepicker' => \RealZone22\LaraLine\View\Components\DatePicker\DatePicker::class,
+
+        'device' => \RealZone22\LaraLine\View\Components\Devices\Device::class,
+
+        'legend' => \RealZone22\LaraLine\View\Components\Legend\Legend::class,
+
+        'kbd' => \RealZone22\LaraLine\View\Components\KBD\KBD::class,
+
+        'divider' => \RealZone22\LaraLine\View\Components\Divider\Divider::class,
+
+        'link' => \RealZone22\LaraLine\View\Components\Links\Link::class,
+
+        'progress' => \RealZone22\LaraLine\View\Components\Progress\Progress::class,
+
+        'rating' => \RealZone22\LaraLine\View\Components\Rating\Rating::class,
+
+        'spinner' => \RealZone22\LaraLine\View\Components\Spinners\Spinner::class,
+
+        'timeline' => \RealZone22\LaraLine\View\Components\Timeline\Timeline::class,
     ],
 ];
