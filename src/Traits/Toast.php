@@ -18,8 +18,7 @@ trait Toast
         $loadingColor = 'blue',
         $redirectTo = null,
         $useNavigation = true
-    )
-    {
+    ) {
         $toast = [
             'title' => $title,
             'message' => $message,
@@ -30,7 +29,7 @@ trait Toast
             'actions' => $actions,
             'loading' => $loading,
             'loadingColor' => $loadingColor,
-            'uuid' => 'laraline-toast-' . Str::uuid(),
+            'uuid' => 'laraline-toast-'.Str::uuid(),
         ];
 
         $this->dispatch('laraline-toast', $toast);

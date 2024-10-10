@@ -14,7 +14,8 @@ class Link extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct() {
+    public function __construct()
+    {
         $this->uuid = 'laraline-link-'.Str::uuid();
     }
 

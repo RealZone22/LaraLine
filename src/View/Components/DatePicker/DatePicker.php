@@ -10,7 +10,9 @@ use Illuminate\View\Component;
 class DatePicker extends Component
 {
     public $uuid;
+
     public $days;
+
     public $firstDay;
 
     /**

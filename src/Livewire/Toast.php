@@ -20,5 +20,4 @@ class Toast extends Component
     {
         return view('laraline::livewire.toast');
     }
-
 }
