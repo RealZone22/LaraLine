@@ -206,7 +206,7 @@ return [
 
     'components' => [
         'accordion' => \RealZone22\LaraLine\View\Components\Accordion\Accordion::class,
-        'collapsable' => \RealZone22\LaraLine\View\Components\Accordion\Collapsable::class,
+        'collapse' => \RealZone22\LaraLine\View\Components\Accordion\Collapsable::class,
 
         'alert' => \RealZone22\LaraLine\View\Components\Alerts\Alert::class,
 

@@ -22,7 +22,7 @@
 - [x] Ratings
 - [x] Spinners
 - [ ] Toasts
-- [ ] Timeline
+- [x] Timeline
 - [ ] Treeview
 
 ## Navigation (0/9)
