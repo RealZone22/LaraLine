@@ -3,6 +3,8 @@
 // config for RealZone22/LaraLine
 return [
     'prefix' => '',
+    'identifier' => 'laraline',
+
 
     'settings' => [
         'toast' => [
@@ -223,11 +225,7 @@ return [
         'carousel' => \RealZone22\LaraLine\View\Components\Carousel\Carousel::class,
         'carousel-item' => \RealZone22\LaraLine\View\Components\Carousel\CarouselItem::class,
 
-        'datepicker' => \RealZone22\LaraLine\View\Components\DatePicker\DatePicker::class,
-
         'device' => \RealZone22\LaraLine\View\Components\Devices\Device::class,
-
-        'legend' => \RealZone22\LaraLine\View\Components\Legend\Legend::class,
 
         'kbd' => \RealZone22\LaraLine\View\Components\KBD\KBD::class,
 
@@ -242,5 +240,7 @@ return [
         'spinner' => \RealZone22\LaraLine\View\Components\Spinners\Spinner::class,
 
         'timeline' => \RealZone22\LaraLine\View\Components\Timeline\Timeline::class,
+
+        'input' => \RealZone22\LaraLine\View\Components\Inputs\Input::class,
     ],
 ];
