@@ -5,7 +5,6 @@ return [
     'prefix' => '',
     'identifier' => 'laraline',
 
-
     'settings' => [
         'toast' => [
             'position' => 'top-right',
