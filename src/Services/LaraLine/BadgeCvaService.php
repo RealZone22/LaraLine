@@ -10,28 +10,40 @@ class BadgeCvaService
     {
         return ClassVarianceAuthority::new(
             [
-                'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50',
+                'inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium',
             ],
             [
                 'variants' => [
-                    'variant' => [
-                        'default' => 'bg-primary text-primary-foreground shadow hover:bg-primary/90',
-                        'destructive' => 'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
-                        'outline' => 'border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground',
-                        'secondary' => 'bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80',
-                        'ghost' => 'hover:bg-accent hover:text-accent-foreground',
-                        'link' => 'text-primary underline-offset-4 hover:underline',
+                    'solid' => [
+                        'dark' => 'bg-gray-800 text-white dark:bg-white dark:text-neutral-800',
+                        'secondary' => 'bg-gray-500 text-white',
+                        'info' => 'bg-blue-600 text-white dark:bg-blue-500',
+                        'success' => 'bg-teal-500 text-white',
+                        'danger' => 'bg-red-500 text-white',
+                        'warning' => 'bg-yellow-500 text-white',
+                        'light' => 'bg-white text-gray-600',
                     ],
-                    'size' => [
-                        'default' => 'h-9 px-4 py-2',
-                        'sm' => 'h-8 rounded-md px-3 text-xs',
-                        'lg' => 'h-10 rounded-md px-8',
-                        'icon' => 'h-9 w-9',
+                    'soft' => [
+                        'dark' => 'bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white',
+                        'secondary' => 'bg-gray-50 text-gray-500 dark:bg-white/10 dark:text-white',
+                        'info' => 'bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500',
+                        'success' => 'bg-teal-100 text-teal-800 dark:bg-teal-800/30 dark:text-teal-500',
+                        'danger' => 'bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500',
+                        'warning' => 'bg-yellow-100 text-yellow-800 dark:bg-yellow-800/30 dark:text-yellow-500',
+                        'light' => 'bg-white/10 text-white',
+                    ],
+                    'outline' => [
+                        'dark' => 'border border-gray-800 text-gray-800 dark:border-neutral-200 dark:text-white',
+                        'secondary' => 'border border-gray-500 text-gray-500 dark:text-neutral-400',
+                        'info' => 'border border-blue-600 text-blue-600 dark:text-blue-500',
+                        'success' => 'border border-teal-500 text-teal-500',
+                        'danger' => 'border border-red-500 text-red-500',
+                        'warning' => 'border border-yellow-500 text-yellow-500',
+                        'light' => 'border border-white text-white',
                     ],
                 ],
                 'defaultVariants' => [
-                    'variant' => 'default',
-                    'size' => 'default',
+                    'solid' => 'dark',
                 ],
             ],
         );

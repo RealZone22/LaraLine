@@ -7,6 +7,9 @@ use Illuminate\View\Compilers\BladeCompiler;
 use Livewire\Livewire;
 use RealZone22\LaraLine\Commands\LaraLineCommand;
 use RealZone22\LaraLine\Livewire\Toast;
+use RealZone22\LaraLine\Services\LaraLine\AlertCvaService;
+use RealZone22\LaraLine\View\Components\Accordion\Accordion;
+use RealZone22\LaraLine\View\Components\Collapse\Collapse;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -100,18 +103,18 @@ class LaraLineServiceProvider extends PackageServiceProvider
     public function registerComponents()
     {
         $this->publishes([
-            __DIR__ . '/../resources/views/components' => resource_path('views/vendor/laraline/components'),
-            __DIR__ . '/../src/View/Components' => app_path('View/Components'),
+            __DIR__ . '/../resources/views/components' => resource_path('views/components'),
             __DIR__ . '/../resources/views/livewire' => resource_path('views/vendor/laraline/livewire'),
             __DIR__ . '/../src/Livewire' => app_path('Livewire'),
         ], 'laraline-components');
 
         foreach ($this->components as $blade => $class) {
             $this->publishes([
-                __DIR__ . "/../resources/views/components/{$blade}" => resource_path("views/vendor/laraline/components/{$blade}"),
+                __DIR__ . "/../resources/views/components/{$blade}" => resource_path("views/components/{$blade}"),
                 __DIR__ . "/../src/View/Components/{$class}" => app_path("View/Components/{$class}"),
             ], 'laraline-component-' . $blade);
         }
+
 
         foreach ($this->livewireComponents as $blade => $class) {
             $this->publishes([
@@ -119,6 +122,7 @@ class LaraLineServiceProvider extends PackageServiceProvider
                 __DIR__ . "/../src/Livewire/{$class}.php" => app_path("Livewire/{$class}.php"),
             ], 'laraline-livewire-' . $blade);
         }
+
 
         foreach ($this->cvaServices as $name => $class) {
             $this->publishes([
