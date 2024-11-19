@@ -1,14 +1,8 @@
-@aware(['collapsible' => null])
-@props([
-    'uuid' => 'laraline-collapse-' . str()->uuid(),
-])
+@props(['uuid' => 'laraline-collapse-' . str()->uuid()])
 
-@if($collapsible)
-    <div class="hs-accordion" wire:key="{{ $uuid }}" id="{{ $uuid }}">
-        {{ $slot }}
-    </div>
-@else
-    <div wire:key="{{ $uuid }}" id="{{ $uuid }}">
-        {{ $slot }}
-    </div>
-@endif
+<div :class="{'hs-accordion': isInsideAccordion}" x-accordion:item
+     x-data="{ item: '{{ $uuid }}', isInsideAccordion: false }"
+     x-init="isInsideAccordion = ($el.closest('[x-data]') && $el.closest('[x-data]').__x) ? $el.closest('[x-data]').__x.$data.isAccordion : false"
+    {{ $attributes->twMerge('') }}>
+    {{ $slot }}
+</div>
