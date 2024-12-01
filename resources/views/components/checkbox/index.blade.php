@@ -12,9 +12,9 @@
         'text-red-600' => $attributes->whereStartsWith('wire:model')->first() && $errors->has($attributes->whereStartsWith('wire:model')->first())
     ])>{{ $slot }}</label>
 </div>
-@error($attributes->whereStartsWith('wire:model')->first())
-    <div class="text-red-500 text-sm mt-1">{{ $message }}</div>
-@enderror
+@if($attributes->whereStartsWith('wire:model')->first() && $errors->has($attributes->whereStartsWith('wire:model')->first()))
+    <div class="text-red-600 text-sm">{{ $errors->first($attributes->whereStartsWith('wire:model')->first()) }}</div>
+@endif
 @if($hint)
     <div class="text-gray-400 py-1 pb-0 text-sm">{{ $hint }}</div>
 @endif

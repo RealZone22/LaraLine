@@ -7,13 +7,15 @@
 ])
 
 @php
-    function loadingTarget($attributes, $loading): ?string
-    {
-        if ($loading == 1) {
-            return $attributes->whereStartsWith('wire:click')->first();
-        }
+    if (!function_exists('loadingTarget')) {
+        function loadingTarget($attributes, $loading): ?string
+        {
+            if ($loading == 1) {
+                return $attributes->whereStartsWith('wire:click')->first();
+            }
 
-        return $loading;
+            return $loading;
+        }
     }
 @endphp
 
@@ -24,7 +26,7 @@
        @if($loading)
            wire:target="{{ loadingTarget($attributes, $loading) }}"
        wire:loading.attr="disabled"
-        @endif
+            @endif
     >
         {{ $slot }}
     </a>
@@ -33,7 +35,7 @@
             @if($loading)
                 wire:target="{{ loadingTarget($attributes, $loading) }}"
             wire:loading.attr="disabled"
-        @endif
+            @endif
     >
         @if($loading)
             <span wire:loading wire:target="{{ loadingTarget($attributes, $loading) }}"
