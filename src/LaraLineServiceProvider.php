@@ -3,13 +3,7 @@
 namespace RealZone22\LaraLine;
 
 use Illuminate\Support\Facades\Blade;
-use Illuminate\View\Compilers\BladeCompiler;
-use Livewire\Livewire;
 use RealZone22\LaraLine\Commands\LaraLineCommand;
-use RealZone22\LaraLine\Livewire\Toast;
-use RealZone22\LaraLine\Services\LaraLine\AlertCvaService;
-use RealZone22\LaraLine\View\Components\Accordion\Accordion;
-use RealZone22\LaraLine\View\Components\Collapse\Collapse;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -103,31 +97,29 @@ class LaraLineServiceProvider extends PackageServiceProvider
     public function registerComponents()
     {
         $this->publishes([
-            __DIR__ . '/../resources/views/components' => resource_path('views/components'),
-            __DIR__ . '/../resources/views/livewire' => resource_path('views/vendor/laraline/livewire'),
-            __DIR__ . '/../src/Livewire' => app_path('Livewire'),
+            __DIR__.'/../resources/views/components' => resource_path('views/components'),
+            __DIR__.'/../resources/views/livewire' => resource_path('views/vendor/laraline/livewire'),
+            __DIR__.'/../src/Livewire' => app_path('Livewire'),
         ], 'laraline-components');
 
         foreach ($this->components as $blade => $class) {
             $this->publishes([
-                __DIR__ . "/../resources/views/components/{$blade}" => resource_path("views/components/{$blade}"),
-                __DIR__ . "/../src/View/Components/{$class}" => app_path("View/Components/{$class}"),
-            ], 'laraline-component-' . $blade);
+                __DIR__."/../resources/views/components/{$blade}" => resource_path("views/components/{$blade}"),
+                __DIR__."/../src/View/Components/{$class}" => app_path("View/Components/{$class}"),
+            ], 'laraline-component-'.$blade);
         }
-
 
         foreach ($this->livewireComponents as $blade => $class) {
             $this->publishes([
-                __DIR__ . "/../resources/views/livewire/{$blade}" => resource_path("views/vendor/laraline/livewire/{$blade}"),
-                __DIR__ . "/../src/Livewire/{$class}.php" => app_path("Livewire/{$class}.php"),
-            ], 'laraline-livewire-' . $blade);
+                __DIR__."/../resources/views/livewire/{$blade}" => resource_path("views/vendor/laraline/livewire/{$blade}"),
+                __DIR__."/../src/Livewire/{$class}.php" => app_path("Livewire/{$class}.php"),
+            ], 'laraline-livewire-'.$blade);
         }
-
 
         foreach ($this->cvaServices as $name => $class) {
             $this->publishes([
-                __DIR__ . "/../src/Services/LaraLine/{$class}.php" => app_path("Services/LaraLine/{$class}.php"),
-            ], 'laraline-cva-service-' . $name);
+                __DIR__."/../src/Services/LaraLine/{$class}.php" => app_path("Services/LaraLine/{$class}.php"),
+            ], 'laraline-cva-service-'.$name);
 
             $this->app->singleton("RealZone22\\LaraLine\\Services\\{$class}", function () use ($class) {
                 return call_user_func("RealZone22\\LaraLine\\Services\\{$class}::new");
