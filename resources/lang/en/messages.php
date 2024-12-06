@@ -6,4 +6,5 @@ return [
     'copied' => 'Copied',
     'close' => 'Close',
     'loading' => 'Loading...',
+    'select_option' => 'Please select an option',
 ];

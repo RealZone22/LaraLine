@@ -6,4 +6,5 @@ return [
     'copied' => 'Kopiert',
     'close' => 'Schließen',
     'loading' => 'Laden...',
+    'select_option' => 'Bitte wähle eine Option',
 ];
