@@ -5,4 +5,5 @@ return [
     'previous' => 'Vorherige',
     'copied' => 'Kopiert',
     'close' => 'Schließen',
+    'loading' => 'Laden...',
 ];

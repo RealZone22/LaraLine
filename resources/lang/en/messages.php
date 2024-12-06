@@ -5,4 +5,5 @@ return [
     'previous' => 'Previous',
     'copied' => 'Copied',
     'close' => 'Close',
+    'loading' => 'Loading...',
 ];
